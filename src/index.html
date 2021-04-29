@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Nuevo Proyecto Remote Terminals</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,19 +11,257 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/251a921121.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><i class="fab fa-ups fa-5x"></i></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
+    </nav>
+    <div class="container bg-dark">
+      <div class="jumbotron">
+        <h1 class="display-4">UPS Remote Desktop Conection</h1>
+        <p class="lead">
+          Shift #3 TOP PC
+        </p>
+        <hr class="my-4" />
+        <img
+          src="http://www.question-defense.com/wp-content/uploads/2010/01/windows-remote-desktop-client-connect-to-different-port.gif"
+          width="50%"
+          class="my-4 text-center"
+        />
+        <p>
+          Favor dar click a los links para ingresar a la PC
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://1000marcas.net/wp-content/uploads/2020/02/Pfizer-Logotipo.jpg"
+                class="d-block w-70"
+                width="100%"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="data:image/png;base64,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"
+                class="d-block w-70%"
+                width="100%"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.elhospital.com/documenta/imagenes/117626/logo-medtronic-GD.jpg"
+                class="d-block w-70%"
+                width="100%"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://lh3.googleusercontent.com/proxy/2K9Quc3EHtUgq4ANMX9crg21C36rzSsyKb1mVgnerz538CmWNzNl7plbYEbU2bgc4WoLdMp3MQZmhPTGPPH2MosbSpfZuvqUp8pXkIzz0bYOYCntJiEs-l8bNPAWc7fVM9mvMCOwr0nbR7AVS_QCGuHdBJ3BAgc"
+                class="d-block w-70%"
+                width="100%"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://pbs.twimg.com/profile_images/1104430883761733639/nhptxXQp.png"
+                class="d-block w-70%"
+                width="100%"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://seekvectorlogo.com/wp-content/uploads/2018/03/pfizer-vector-logo.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">PFIZER</h5>
+              <p class="card-text">
+                <strong>WKSP000D4e85</strong>
+                <a
+                  href="https://www.w3schools.com/html/"
+                  title="Go to W3Schools HTML section"
+                  >Visit our HTML Tutorial</a
+                >
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="data:image/png;base64,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"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">NVIDIA</h5>
+              <p class="card-text">
+                <strong>WKSP000D4e85</strong>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.elhospital.com/documenta/imagenes/117626/logo-medtronic-GD.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">MEDTRONIC</h5>
+              <p class="card-text">
+                <strong>WKSP000D4e85</strong>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://lh3.googleusercontent.com/proxy/2K9Quc3EHtUgq4ANMX9crg21C36rzSsyKb1mVgnerz538CmWNzNl7plbYEbU2bgc4WoLdMp3MQZmhPTGPPH2MosbSpfZuvqUp8pXkIzz0bYOYCntJiEs-l8bNPAWc7fVM9mvMCOwr0nbR7AVS_QCGuHdBJ3BAgc"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">AMAZON</h5>
+              <p class="card-text">
+                <strong>WKSP000D4e85</strong>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://pbs.twimg.com/profile_images/1104430883761733639/nhptxXQp.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">CAT</h5>
+              <p class="card-text">
+                <strong>WKSP000D4e85</strong>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://3hp22p4vkie16x1dv48qurbo-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/logo-300x150.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">SAMTEC</h5>
+              <p class="card-text">
+                <strong>WKSP000D4e85</strong>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer-dark text-muted bg-dark">
+      2 days ago
     </div>
   </body>
 </html>
